@@ -1,0 +1,239 @@
+[
+  {
+    "id": "elem_30",
+    "name": "Rule 30",
+    "family": "elementary",
+    "dimension": 1,
+    "states": 2,
+    "neighborhood": {
+      "type": "radius",
+      "radius": 1
+    },
+    "code": {
+      "wolfram": 30,
+      "binary": "00011110"
+    },
+    "wolfram_class": 3,
+    "behavior_tags": [
+      "chaotic",
+      "aperiodic",
+      "pseudo_random",
+      "edge_of_chaos_hint"
+    ],
+    "description": "1D binary CA with nearest-neighbor rule; from simple seeds it generates highly irregular, chaotic triangular patterns and has been used as a pseudorandom generator.",
+    "visual_notes": "Good for noisy, flame-like wedges, diagonal streaks, and glitchy triangle fields in 1D→2D space–time plots.",
+    "references": [
+      "https://en.wikipedia.org/wiki/Rule_30"
+    ]
+  },
+  {
+    "id": "elem_90",
+    "name": "Rule 90",
+    "family": "elementary",
+    "dimension": 1,
+    "states": 2,
+    "neighborhood": {
+      "type": "radius",
+      "radius": 1
+    },
+    "code": {
+      "wolfram": 90,
+      "binary": "01011010"
+    },
+    "wolfram_class": 3,
+    "behavior_tags": [
+      "chaotic",
+      "fractal",
+      "sierpinski"
+    ],
+    "description": "1D binary CA that produces Sierpiński-triangle-like fractal structure from a single live cell.",
+    "visual_notes": "Great for crisp, self-similar triangle lattices; works well as a mask, dithering pattern, or overlay.",
+    "references": [
+      "https://mathworld.wolfram.com/ElementaryCellularAutomaton.html"
+    ]
+  },
+  {
+    "id": "elem_110",
+    "name": "Rule 110",
+    "family": "elementary",
+    "dimension": 1,
+    "states": 2,
+    "neighborhood": {
+      "type": "radius",
+      "radius": 1
+    },
+    "code": {
+      "wolfram": 110,
+      "binary": "01101110"
+    },
+    "wolfram_class": 4,
+    "behavior_tags": [
+      "edge_of_chaos",
+      "complex",
+      "gliders",
+      "universal_computation"
+    ],
+    "description": "Class IV 1D CA with coexisting regular background and moving localized structures; known to be computationally universal.",
+    "visual_notes": "Use when you want interacting particles over a textured background; good for glitchy circuitry and signal-flow aesthetics.",
+    "references": [
+      "https://en.wikipedia.org/wiki/Elementary_cellular_automaton",
+      "https://ar5iv.labs.arxiv.org/html/1208.2456"
+    ]
+  },
+  {
+    "id": "elem_184",
+    "name": "Rule 184",
+    "family": "elementary",
+    "dimension": 1,
+    "states": 2,
+    "neighborhood": {
+      "type": "radius",
+      "radius": 1
+    },
+    "code": {
+      "wolfram": 184,
+      "binary": "10111000"
+    },
+    "wolfram_class": 2,
+    "behavior_tags": [
+      "traffic_flow",
+      "particle_conservation",
+      "drifting_domains"
+    ],
+    "description": "Elementary CA that behaves like a simple one-lane traffic model, conserving the number of particles and forming moving jams and free-flow regions.",
+    "visual_notes": "Nice for conveyor-belt, scanline-migration, or traffic-flow metaphors and for animating directional drift.",
+    "references": [
+      "https://en.wikipedia.org/wiki/Cellular_automaton"
+    ]
+  },
+  {
+    "id": "life_b3s23",
+    "name": "Conway's Game of Life",
+    "family": "lifelike",
+    "dimension": 2,
+    "states": 2,
+    "neighborhood": {
+      "type": "moore",
+      "range": 1
+    },
+    "code": {
+      "lifelike": "B3/S23"
+    },
+    "wolfram_class": 4,
+    "behavior_tags": [
+      "edge_of_chaos",
+      "gliders",
+      "oscillators",
+      "universal_computation"
+    ],
+    "description": "Classic Life rule: dead cells with 3 live neighbors are born; live cells with 2 or 3 neighbors survive. Supports gliders, oscillators, and universal computation.",
+    "visual_notes": "Use for organic pixel swarms, city-like patterns, or growth/decay metaphors. Good base for emergent micro-narratives.",
+    "references": [
+      "https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
+    ]
+  },
+  {
+    "id": "highlife_b36s23",
+    "name": "HighLife",
+    "family": "lifelike",
+    "dimension": 2,
+    "states": 2,
+    "neighborhood": {
+      "type": "moore",
+      "range": 1
+    },
+    "code": {
+      "lifelike": "B36/S23"
+    },
+    "wolfram_class": 4,
+    "behavior_tags": [
+      "edge_of_chaos",
+      "replicators",
+      "expansive"
+    ],
+    "description": "Life variant with an additional birth condition at 6 neighbors; famous for its self-replicating patterns and faster expansion.",
+    "visual_notes": "Good when you want rapid colonization, self-copying motifs, and aggressively expanding structures.",
+    "references": [
+      "https://iris.joshua-becker.com/lab/cellular-automaton-game-life-variants/",
+      "https://groups.google.com/g/comp.theory.cell-automata/c/aetKFg0hths/m/QAPO3B6QoFsJ"
+    ]
+  },
+  {
+    "id": "seeds_b2s",
+    "name": "Seeds",
+    "family": "lifelike",
+    "dimension": 2,
+    "states": 2,
+    "neighborhood": {
+      "type": "moore",
+      "range": 1
+    },
+    "code": {
+      "lifelike": "B2/S"
+    },
+    "wolfram_class": 3,
+    "behavior_tags": [
+      "chaotic",
+      "explosive",
+      "expanding_fronts"
+    ],
+    "description": "Every live cell dies each step; dead cells with exactly 2 neighbors are born, producing constantly exploding fronts.",
+    "visual_notes": "Ideal for sparkling, firework-like, or foam-like growth. Good as a destructive overlay or burst texture.",
+    "references": [
+      "https://iris.joshua-becker.com/lab/cellular-automaton-game-life-variants/",
+      "https://www.wikiwand.com/en/articles/Life-like_cellular_automaton"
+    ]
+  },
+  {
+    "id": "maze_b3s12345",
+    "name": "Maze",
+    "family": "lifelike",
+    "dimension": 2,
+    "states": 2,
+    "neighborhood": {
+      "type": "moore",
+      "range": 1
+    },
+    "code": {
+      "lifelike": "B3/S12345"
+    },
+    "wolfram_class": 2,
+    "behavior_tags": [
+      "crystalline",
+      "labyrinthine",
+      "growth"
+    ],
+    "description": "Life-like rule that tends to form static labyrinths and maze-like structures.",
+    "visual_notes": "Perfect for circuit-board, dungeon, or labyrinth textures and overlays.",
+    "references": [
+      "http://djbinder.com/articles/Life/",
+      "https://iris.joshua-becker.com/lab/cellular-automaton-game-life-variants/"
+    ]
+  },
+  {
+    "id": "daynight_b3678s34678",
+    "name": "Day & Night",
+    "family": "lifelike",
+    "dimension": 2,
+    "states": 2,
+    "neighborhood": {
+      "type": "moore",
+      "range": 1
+    },
+    "code": {
+      "lifelike": "B3678/S34678"
+    },
+    "wolfram_class": 4,
+    "behavior_tags": [
+      "edge_of_chaos",
+      "self_dual",
+      "structured"
+    ],
+    "description": "Symmetric Life-like rule where live and dead cells follow complementary rules; supports large organized domains and structures.",
+    "visual_notes": "Good for high-contrast tilings, domain walls, and patterns that feel reversible (day/night duality).",
+    "references": [
+      "http://djbinder.com/articles/Life/",
+      "https://iris.joshua-becker.com/lab/cellular-automaton-game-life-variants/"
+    ]
+  }
+]
