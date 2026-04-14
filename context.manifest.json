@@ -1,10 +1,16 @@
 {
-  "description": "Cellular automata knowledge pack \u2014 math model, rules, visual strategies, kernels, and prompts for generative art",
+  "description": "Cellular automata knowledge pack \u2014 math, rules, GLSL implementation guide, GPU sketches, and visual atlas for generative art",
   "files": [
     "README.md",
     "kernels.md",
     "rules.json",
     "prompts.md",
+    "sketches/game_of_life.js",
+    "sketches/elementary_ca.js",
+    "sketches/lenia.js",
+    "sketches/brian_brain.js",
+    "docs/glsl_implementation_guide.md",
+    "structured_data/ca_visual_atlas.json",
     "metadata.json"
   ]
 }

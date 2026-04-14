@@ -1,0 +1,176 @@
+{
+  "version": "1.0",
+  "description": "Visual atlas of cellular automata behaviors — aesthetic profiles, texture descriptions, and art generation guidance for each major CA family.",
+  "families": [
+    {
+      "id": "elementary_1d",
+      "name": "Elementary Cellular Automata (1D)",
+      "generation": "1D grid rendered as 2D spacetime (rows = generations, columns = cells)",
+      "rules": {
+        "class_1_uniform": {
+          "examples": [0, 8, 32, 40, 128, 160],
+          "visual": "Solid fill or empty. All cells converge to the same state.",
+          "art_use": "Texture fill, background base layer, solid masks"
+        },
+        "class_2_periodic": {
+          "examples": [4, 12, 108, 184],
+          "visual": "Repeating diagonal stripes, checkerboards, regular waves",
+          "art_use": "Tiling patterns, scanline aesthetics, fabric textures, rhythmic overlays"
+        },
+        "class_3_chaotic": {
+          "examples": [30, 22, 126, 150],
+          "visual": "Irregular triangular wedges, noise-like fields, asymmetric snowflakes",
+          "art_use": "Procedural noise, glitch textures, flame effects, organic irregularity"
+        },
+        "class_4_complex": {
+          "examples": [54, 110],
+          "visual": "Particles traveling over structured background, local structures interacting",
+          "art_use": "Circuit-board aesthetics, signal propagation, information-flow metaphors"
+        }
+      },
+      "special_rules": [
+        {
+          "rule": 30,
+          "name": "The Chaotic One",
+          "texture": "Triangular patches of noise, diagonal flame streaks. No periodicity.",
+          "palette_hint": "Hot orange/red wedges on dark ground. Ember textures.",
+          "prompt_tags": ["rule30", "chaotic_ca", "triangular_noise", "pseudo_random_texture"]
+        },
+        {
+          "rule": 90,
+          "name": "The Sierpiński Rule",
+          "texture": "Perfect Sierpiński triangle lattice from single-cell seed. XOR-based fractal.",
+          "palette_hint": "High-contrast: white triangles on black, or inverted. Geometric.",
+          "prompt_tags": ["rule90", "sierpinski_ca", "fractal_triangle", "self_similar_grid"]
+        },
+        {
+          "rule": 110,
+          "name": "Universal Computation",
+          "texture": "Textured background of repeating small motifs with traveling glider-like structures weaving through it.",
+          "palette_hint": "Muted base with bright particle trails. Circuit-board colors.",
+          "prompt_tags": ["rule110", "glider_ca", "universal_computation", "complex_ca"]
+        },
+        {
+          "rule": 184,
+          "name": "Traffic Flow",
+          "texture": "Diagonal bands drifting left, with stationary jam regions. Like a conveyor belt.",
+          "palette_hint": "Directional streaks. Use velocity-to-hue mapping.",
+          "prompt_tags": ["rule184", "traffic_ca", "drift_texture", "directional_flow"]
+        }
+      ]
+    },
+    {
+      "id": "lifelike_2d",
+      "name": "Life-like Automata (2D)",
+      "generation": "2D grid, Moore neighborhood, B/S rule notation",
+      "rules": [
+        {
+          "code": "B3/S23",
+          "name": "Conway's Game of Life",
+          "texture": "Organic pixel swarms. Dense regions form stable structures; sparse regions collapse. Gliders travel across empty space.",
+          "density_equilibrium": "~3%",
+          "visual_character": "Sparse, emergent, biological. Fluctuating between collapse and explosion.",
+          "palette_hint": "Green-on-black (classic), or biological organics (cell culture colors).",
+          "prompt_tags": ["game_of_life", "conway", "glider", "emergent_life", "pixel_organisms"]
+        },
+        {
+          "code": "B36/S23",
+          "name": "HighLife",
+          "texture": "Similar to Life but with self-replicating patterns. Regions clone themselves and expand.",
+          "visual_character": "Aggressive expansion, self-copying motifs, rapid colonization.",
+          "palette_hint": "Viral spread aesthetics. Bright birth flash on dark canvas.",
+          "prompt_tags": ["highlife", "self_replicating", "viral_ca", "explosive_growth"]
+        },
+        {
+          "code": "B2/S",
+          "name": "Seeds",
+          "texture": "Constant explosive fountain of sparks. Every live cell dies immediately but spawns new ones. Never static.",
+          "visual_character": "Fireworks, foam, crystalline explosions. Constantly expanding frontier.",
+          "palette_hint": "Bright hot sparks on void. Birth flash dominant.",
+          "prompt_tags": ["seeds_ca", "spark_texture", "explosion_ca", "firework_cellular"]
+        },
+        {
+          "code": "B3/S12345",
+          "name": "Maze",
+          "texture": "Crisp labyrinthine corridors and walls. Grows until frozen into a maze-like static structure.",
+          "visual_character": "Architectural, labyrinthine, crystalline. Final state is static.",
+          "palette_hint": "Dungeon map colors. Stone textures. Clean white-on-dark lines.",
+          "prompt_tags": ["maze_ca", "labyrinth_texture", "dungeon_map", "crystalline_ca"]
+        },
+        {
+          "code": "B3678/S34678",
+          "name": "Day & Night",
+          "texture": "Large organized domains of live/dead cells, with complex boundary structures. Alive and dead are symmetric.",
+          "visual_character": "High-contrast dueling territories. Self-dual — live/dead flip produces same patterns.",
+          "palette_hint": "Day/night split palette. Stark contrast. Domain walls as glowing seams.",
+          "prompt_tags": ["day_night_ca", "dual_ca", "domain_walls", "symmetric_ca"]
+        }
+      ]
+    },
+    {
+      "id": "multi_state_2d",
+      "name": "Multi-State Automata",
+      "rules": [
+        {
+          "name": "Brian's Brain",
+          "states": 3,
+          "state_names": ["OFF", "FIRING", "REFRACTORY"],
+          "texture": "Dense field of continuously traveling signals. Nothing is stable. Looks like neural activity or cascade propagation.",
+          "visual_character": "Endless motion. Bright sharp FIRING cells against dim REFRACTORY trail.",
+          "palette_hint": "Neon green/blue FIRING on ember-red REFRACTORY on void-black OFF. Neural fire colors.",
+          "prompt_tags": ["brians_brain", "neural_ca", "signal_propagation", "3state_ca", "firing_cascade"]
+        },
+        {
+          "name": "Cyclic CA (Greenberg-Hastings)",
+          "states": "N (typically 8-16)",
+          "texture": "Spiral waves expanding from random nucleation sites. Concentric colored rings rotating outward. BZ reaction aesthetics.",
+          "visual_character": "Serene, hypnotic rotating spirals. Dense with overlapping target patterns.",
+          "palette_hint": "Full spectral sweep per cycle. Each state is a different hue — creates rainbow spirals.",
+          "prompt_tags": ["cyclic_ca", "spiral_waves", "bz_reaction", "target_patterns", "rainbow_spirals"]
+        },
+        {
+          "name": "Langton's Ant",
+          "states": "2 (plus ant direction)",
+          "texture": "Early: symmetric symmetric expanding diamond. Late: produces an infinite 'highway' corridor after ~10,000 steps.",
+          "visual_character": "Ordered initial chaos resolving into a regular periodic diagonal 'highway' structure.",
+          "palette_hint": "Path trail coloring. White trail on black, or age-mapped rainbow for visited cells.",
+          "prompt_tags": ["langtons_ant", "ant_trail", "emergent_highway", "turmite"]
+        }
+      ]
+    },
+    {
+      "id": "continuous_ca",
+      "name": "Continuous Cellular Automata",
+      "rules": [
+        {
+          "name": "SmoothLife",
+          "description": "Continuous extension of Game of Life using a circular neighborhood and smooth transition functions",
+          "texture": "Flowing, biological blobs. Larger gliders. Pulsating amoeba-like organisms. Merging and splitting cells.",
+          "visual_character": "Organic, fluid, biological. More creature-like than discrete Life.",
+          "palette_hint": "Cell-culture greens, fluorescent microscopy aesthetics, or alien bioluminescence.",
+          "prompt_tags": ["smoothlife", "continuous_ca", "amoeba_simulation", "fluid_life", "bioluminescent_ca"]
+        },
+        {
+          "name": "Lenia",
+          "description": "Full continuous generalization: real-valued states, circular kernel, bell-curve growth function",
+          "texture": "Multiple named 'species' each with distinct morphology. Orbium glides smoothly. Hydrogeminium pulses. Dendritia branches.",
+          "visual_character": "Most organic of all CA. True creature-like entities with defined morphologies.",
+          "lenia_species": [
+            { "name": "Orbium", "visual": "Smooth gliding disk, like a cell nucleus in motion" },
+            { "name": "Hydrogeminium", "visual": "Pulsating blob, alternating between spread and collapsed" },
+            { "name": "Scutium", "visual": "Shield-shaped, stable, geometric" },
+            { "name": "Dendritia", "visual": "Branching dendritic growth, tree-like spreading" }
+          ],
+          "palette_hint": "Fluorescent biological imaging. Confocal microscopy look. Or maximize saturation for psychedelic.",
+          "prompt_tags": ["lenia", "artificial_life", "ca_creatures", "orbium", "continuous_life"]
+        }
+      ]
+    }
+  ],
+  "visual_vocabulary": {
+    "density_terms": ["sparse_gliders", "dense_chaos", "equilibrium_density", "extinction", "explosive_growth", "frozen_pattern"],
+    "texture_terms": ["pixel_swarm", "crystalline_maze", "spiral_wave", "signal_cascade", "dendritic_branch", "foam_explosion", "stripe_diagonal", "sierpinski_triangle"],
+    "behavioral_terms": ["glider", "oscillator", "still_life", "spaceship", "methuselah", "replicator", "garden_of_eden"],
+    "coloring_strategies": ["alive_dead_binary", "age_gradient", "birth_flash", "death_ember", "state_hue_spectrum", "neighbor_count_shade", "trajectory_trail"]
+  }
+}
