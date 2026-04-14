@@ -1,0 +1,10 @@
+{
+  "description": "Cellular automata knowledge pack \u2014 math model, rules, visual strategies, kernels, and prompts for generative art",
+  "files": [
+    "README.md",
+    "kernels.md",
+    "rules.json",
+    "prompts.md",
+    "metadata.json"
+  ]
+}
